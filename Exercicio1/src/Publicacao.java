@@ -1,9 +1,9 @@
-public abstract class Publicacao {
+public abstract class Publicacao extends DomainObject {
 	private  int numExemplares,numExemplaresEmprestados;
 	private String titulo;
 	
-	public Publicacao(long id, String titulo,int numExemplares, AreaConcreta area) {
-		
+	public Publicacao(long id, String titulo,int numExemplares, AreaConcreto area) {
+		super(id);
 	}
 	public int obterNumExemplaresDisponiveis() {
 		return this.numExemplares-this.numExemplaresEmprestados;
@@ -15,3 +15,4 @@ public abstract class Publicacao {
 		this.numExemplares=numExemplares;
 	}
 }
+

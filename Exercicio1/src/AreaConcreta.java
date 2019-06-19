@@ -5,4 +5,7 @@ public class AreaConcreta {
 	public AreaConcreta(long id, String nome) {
 		
 	}
+	public void setArea(String nomeRecebido) {
+		this.nome=nomeRecebido;
+	}
 }
