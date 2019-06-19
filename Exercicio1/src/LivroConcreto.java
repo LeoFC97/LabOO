@@ -6,5 +6,11 @@ public class LivroConcreto extends Publicacao {
 		super(id, titulo, numExemplares, area);
 	}
 	
+	public void adicionarAutor(AutorConcreto autor) {
+		
+	}
+	public void removerAutor(AutorConcreto autor) {
+		
+	}
 
 }
